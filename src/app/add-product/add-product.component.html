@@ -1,0 +1,57 @@
+<div class="add-product-container">
+  <h2>Add New Product</h2>
+  <form (ngSubmit)="onSubmit()" #productForm="ngForm">
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input id="title" name="title" [(ngModel)]="newProduct.title" required />
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" id="price" name="price" [(ngModel)]="newProduct.price" required />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" name="description" [(ngModel)]="newProduct.description" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      <input id="category" name="category" [(ngModel)]="newProduct.category" required />
+    </div>
+
+    <div class="form-group">
+      <label for="brand">Brand</label>
+      <input id="brand" name="brand" [(ngModel)]="newProduct.brand" required />
+    </div>
+
+    <div class="form-group">
+      <label for="availabilityStatus">Availability Status</label>
+      <select id="availabilityStatus" name="availabilityStatus" [(ngModel)]="newProduct.availabilityStatus" required>
+        <option value="">Select Status</option>
+        <option value="In Stock">In Stock</option>
+        <option value="Out of Stock">Out of Stock</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="stock">Stock</label>
+      <input type="number" id="stock" name="stock" [(ngModel)]="newProduct.stock" required />
+    </div>
+
+    <div class="form-group">
+      <label for="images">Image URLs (comma-separated)</label>
+      <input
+        id="images"
+        name="images"
+        [(ngModel)]="newProduct.images[0]"
+        placeholder="e.g. https://example.com/image1.jpg"
+        required
+      />
+    </div>
+
+    <button type="submit" [disabled]="!productForm.form.valid" class="btn-submit">Add Product</button>
+  </form>
+</div>

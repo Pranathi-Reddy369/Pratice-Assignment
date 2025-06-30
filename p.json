@@ -1,0 +1,69 @@
+{
+  "products": [
+    {
+      "id": "6190",
+      "title": "donkey",
+      "price": 90,
+      "description": "The donkey or ass is a domesticated equine. It derives from the African wild ass, Equus africanus, and may be classified either as a subspecies thereof, Equus africanus asinus, or as a separate species, Equus asinus. It was domesticated in Africa some 5000–7000 years ago, and has been used mainly as ",
+      "category": "",
+      "brand": "Goppolla Brand",
+      "availabilityStatus": "In Stock",
+      "stock": 9,
+      "images": [
+        "https://img.freepik.com/free-vector/donkey-animal-cartoon-character_1308-69556.jpg?ga=GA1.1.876308858.1730523253&semt=ais_hybrid&w=740"
+      ]
+    },
+    {
+      "id": "7471",
+      "title": "Sathwika",
+      "price": 0,
+      "description": "sathwika is a very good girl.Sathwika is frfom IB-2.sathwika is very decent girl.Sathwika listens to  my class very well.Sathwika asks me doubts regularly.All the beat ra chinna.May god bless you ra chinna",
+      "category": "",
+      "brand": "MKR",
+      "availabilityStatus": "In Stock",
+      "stock": 0,
+      "images": [
+        "https://img.freepik.com/free-vector/happy-piglet-playing-mud_1308-166690.jpg?ga=GA1.1.876308858.1730523253&semt=ais_items_boosted&w=740"
+      ]
+    },
+    {
+      "id": "d4fd",
+      "title": "Hasini",
+      "price": 0,
+      "description": "Hasini is a very good girl. Hasini is frfom IB-2.sathwika is very decent girl. Hasini listens to  my class very well. Hasini asks me doubts regularly.All the beat ra chinna.May god bless you ra chinna",
+      "category": "",
+      "brand": "MKR",
+      "availabilityStatus": "In Stock",
+      "stock": 0,
+      "images": [
+        "https://img.freepik.com/premium-vector/kangaroo-with-kangaroo-its-back-white-background_835895-19246.jpg?ga=GA1.1.876308858.1730523253&semt=ais_items_boosted&w=740"
+      ]
+    },
+    {
+      "id": "bdd9",
+      "title": "Nandini",
+      "price": 0,
+      "description": "Hasini is a very good girl. Hasini is frfom IB-2.sathwika is very decent girl. Hasini listens to  my class very well. Hasini asks me doubts regularly.All the beat ra chinna.May god bless you ra chinna",
+      "category": "",
+      "brand": "MKR",
+      "availabilityStatus": "Low Stock",
+      "stock": 0,
+      "images": [
+        "https://img.freepik.com/premium-vector/kangaroo-with-kangaroo-its-back-white-background_835895-19246.jpg?ga=GA1.1.876308858.1730523253&semt=ais_items_boosted&w=740"
+      ]
+    },
+    {
+      "id": "7836",
+      "title": "Nandini",
+      "price": 0,
+      "description": "Hasini is a very good girl. Hasini is frfom IB-2.sathwika is very decent girl. Hasini listens to  my class very well. Hasini asks me doubts regularly.All the beat ra chinna.May god bless you ra chinna",
+      "category": "",
+      "brand": "MKR",
+      "availabilityStatus": "In Stock",
+      "stock": 0,
+      "images": [
+        "https://img.freepik.com/premium-vector/kangaroo-with-kangaroo-its-back-white-background_835895-19246.jpg?ga=GA1.1.876308858.1730523253&semt=ais_items_boosted&w=740"
+      ]
+    }
+  ]
+}

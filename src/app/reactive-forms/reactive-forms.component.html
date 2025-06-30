@@ -1,0 +1,37 @@
+<p>reactive-forms works!</p>
+<h2>User Registration (with FormBuilder & Validators)</h2>
+    <form [formGroup]="reactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Username:</label><br>
+        <input id="username" type="text" formControlName="username" required>
+        <div *ngIf="reactForm.get('username')?.errors?.['required'] && reactForm.get('username')?.touched" style="color:red">
+            *User Name is required
+        </div>
+        <div  *ngIf="reactForm.get('username')?.errors?.['maxlength'] && reactForm.get('username')?.touched" style="color:red">
+            *User Name should be less than 5 characters
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label><br>
+        <input id="email" type="email" formControlName="email">
+        <div style="color:red">
+            *Email is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label><br>
+        <input id="age" type="number" formControlName="age">
+        <div *ngIf="reactForm.get('age')?.errors?.['required'] && reactForm.get('age')?.touched" style="color:red">
+            *Age is required
+        </div>
+        <div *ngIf="reactForm.get('age')?.errors?.['max'] && reactForm.get('age')?.touched" style="color:red">
+            *Age should be below 18
+        </div>
+      </div>
+
+      <button type="submit">Register</button>
+      <button (click)="onReset()">Reset</button>
+    </form>

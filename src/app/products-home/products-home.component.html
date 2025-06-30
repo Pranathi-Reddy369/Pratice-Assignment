@@ -1,0 +1,51 @@
+<div class="navbar">
+  <div class="logo">
+    <span class="brand-name">Sonic Mart</span>
+  </div>
+
+  <div class="nav-center">
+    <input type="text" placeholder="Search for an item" [(ngModel)]="searchTerm" />
+    <select (change)="onFilterChange($event)">
+      <option value="All">All</option>
+      <option value="InStock">In Stock</option>
+      <option value="OutOfStock">Out of Stock</option>
+    </select>
+<button (click)="toggleAddForm()" class="btn-add">➕</button>
+  </div>
+  <div *ngIf="showAddForm" class="add-form-wrapper">
+  <h3>Add New Product</h3>
+  <form #formRef="ngForm"  class="add-form">
+    <input type="text" placeholder="Title" [(ngModel)]="productForm.title" name="title" required />
+    <input type="number" placeholder="Price" [(ngModel)]="productForm.price" name="price" required />
+    <input type="text" placeholder="Description" [(ngModel)]="productForm.description" name="description" required />
+    <!-- <input type="text" placeholder="Category" [(ngModel)]="productForm.category" name="category" required /> -->
+    <input type="text" placeholder="Brand" [(ngModel)]="productForm.brand" name="brand" required />
+    <select [(ngModel)]="productForm.availabilityStatus" name="availabilityStatus" required>
+      <option value="In Stock">In Stock</option>
+      <option value="Low Stock">Low Stock</option>
+    </select>
+    <input type="number" placeholder="Stock Count" [(ngModel)]="productForm.stock" name="stock" required />
+    <input type="text" placeholder="Image URL" [(ngModel)]="imageUrl" name="imageUrl" />
+
+    <button  [disabled]="!formRef.form.valid" (click)="addOrUpdateProduct()">Add Product</button>
+  </form>
+</div>
+
+
+  <div class="nav-right">
+    <button class="btn">🛒Cart Items {{count}}</button>
+  </div>
+</div>
+
+<div *ngIf="filteredProducts.length === 0" style="text-align:center; padding: 2rem; color: grey;">
+  No products match your search/filter.
+</div>
+
+<div class="card-wrapper">
+  <app-product-card
+    *ngFor="let product of filteredProducts"
+    [product]="product"
+    (addToCart)="onAddToCart($event)"
+     (deleteProduct)="deleteProduct($event)">
+  </app-product-card>
+</div>

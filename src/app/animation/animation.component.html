@@ -1,0 +1,8 @@
+<p>animation works!</p>
+<button (click)="toggle()">Click to Toggle</button>
+<h2 [@fade]="isToggle ? 'in' : 'out' " style="color:brown">Welcome</h2>
+<div [@toggle]="isToggle ? 'open' : 'closed' ">
+    animation Dive
+</div>
+<div class="bg bg-danger" style="height: 50px; width: 50px; margin: 10px;" [@ghw]="isToggle? 'g' : 'dg' "> </div>
+<h2 style="margin:10px" [@rotate]="isToggle ? 'r1' : 'r2' ">Hello</h2>

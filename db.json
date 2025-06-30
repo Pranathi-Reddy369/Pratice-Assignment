@@ -1,0 +1,84 @@
+{
+  "students": [
+    {
+      "id": "930a",
+      "firstname": "PORALLA",
+      "lastname": "REDDY",
+      "email": "porallapranathireddy@gmail.com",
+      "age": 9,
+      "gender": "female",
+      "dob": "2025-06-25",
+      "phone": "1234578684",
+      "address": "styuioplkjhg",
+      "country": "pakistan",
+      "username": "PORALLA",
+      "password": "1234567890-="
+    }
+  ],
+  "teachers": [
+    {
+      "id": "302a",
+      "name": "jacintha",
+      "subject": "social science"
+    },
+    {
+      "id": "24bf",
+      "name": "fd",
+      "subject": "ksmd"
+    }
+  ],
+  "school": [
+    {
+      "id": "5a6e",
+      "name": "NIAT",
+      "strength": "1000"
+    },
+    {
+      "id": "417f",
+      "name": "Chaitanya",
+      "strength": "2000"
+    },
+    {
+      "id": "77b8",
+      "name": "St Mary's High School",
+      "strength": "1500"
+    },
+    {
+      "id": "4b5d",
+      "name": "scaler",
+      "strength": "3000"
+    },
+    {
+      "id": "8f06",
+      "name": "scaler",
+      "strength": 0
+    }
+  ],
+  "principal": [
+    {
+      "id": "b6f6",
+      "name": "Uppal Rao",
+      "experience": "12"
+    },
+    {
+      "id": "1556",
+      "name": "Rahul",
+      "experience": "5 "
+    },
+    {
+      "id": "8fea",
+      "name": "Jacintha Basco",
+      "experience": "25"
+    },
+    {
+      "id": "7ac8",
+      "name": "rty",
+      "experience": "3"
+    },
+    {
+      "id": "0ccc",
+      "name": "ksktre",
+      "experience": 0
+    }
+  ]
+}

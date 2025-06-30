@@ -1,0 +1,33 @@
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; text-align: left;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of response">
+      <td>{{ item.name }}</td>
+      <td>₹{{ item.price }}</td>
+      <td>
+        <button (click)="edit(item)">Edit</button>
+        <button (click)="delete(item)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<!-- Form for Add/Edit -->
+<div>
+  <div>
+    <label for="name">Name: </label>
+    <input [(ngModel)]="detailsForm.name" type="text" id="name" />
+  </div>
+  <div>
+    <label for="price">Price: </label>
+    <input [(ngModel)]="detailsForm.price" type="number" id="price" />
+  </div>
+  <button (click)="add()">Submit</button>
+</div>

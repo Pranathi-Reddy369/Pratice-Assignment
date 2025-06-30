@@ -1,0 +1,22 @@
+<p>dash-board works!</p>
+ <div>
+    <form #userInfo="ngForm" (ngSubmit)="onSubmit(userInfo)">
+        <input [(ngModel)]="user.firstName" type="text" placeholder="firstName" name="firstName" required/>
+        <div *ngIf="userInfo.controls['firstName']?.touched && userInfo.controls['firstName']?.invalid" class="text-danger">
+            *First name is required
+        </div>
+        <input [(ngModel)]="user.lastName" type="text" placeholder="lastName" name="lastName" />
+        <div class="text-danger" *ngIf="userInfo.controls['lastName']?.dirty">
+            *Last name is required
+        </div>
+        <input [(ngModel)]="user.email" type="email" placeholder="email" name="email" required/>
+        <div class="text-danger" *ngIf="userInfo.controls['email']?.touched && userInfo.controls['email']?.invalid">
+            *Email is required
+        </div>
+        <input [(ngModel)]="user.number" type="number" placeholder="number" name="number" required/>
+        <div class="text-danger" *ngIf="userInfo.controls['number']?.touched && userInfo.controls['number']?.invalid">
+            *Number is required
+        </div>
+        <button class="bg-success" type="submit" [disabled]="userInfo.invalid">Submit</button>
+    </form>
+</div>  
